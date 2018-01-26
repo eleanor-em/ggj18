@@ -46,9 +46,7 @@ public class CowController : MonoBehaviour {
         }
 
         // check if we've just released the slingshot
-        if (Input.GetButtonUp("Fire1")) {
-            Debug.Log("FIRE!");
-            Debug.Log(Vector3.Distance(initialPos, transform.position) + " (target: " + pullbackAmount * minPullbackRatio + ")");
+        if (attached && Input.GetButtonUp("Fire1")) {
             // make sure we pulled it back enough
             if (Vector3.Distance(initialPos, transform.position) > pullbackAmount * minPullbackRatio) {
                 // SPRING

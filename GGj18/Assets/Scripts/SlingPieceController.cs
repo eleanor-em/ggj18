@@ -11,9 +11,11 @@ public class SlingPieceController : MonoBehaviour {
     private Vector3 initialPos;
     private Vector3 initialScale;
     private Vector3 stickRelativePos;
+    private Vector3 objInitialPos;
 
 	void Start() {
         initialPos = transform.position;
+        objInitialPos = thrownObject.transform.position;
         initialScale = transform.localScale;
         stickRelativePos = fixedPosDir * (initialScale.z / 2 - initialScale.x / 2);
     }
@@ -21,16 +23,16 @@ public class SlingPieceController : MonoBehaviour {
 	void FixedUpdate() {
         if (attached) {
             var objPos = thrownObject.transform.position;
-            var objDisp = objPos - thrownObject.GetComponent<CowController>().InitialPos;
+            var objDisp = objPos - objInitialPos;
 
             // object is stuck in the plane for simplicity
             // bad hack, sorry
-            var desiredYAngle = Mathf.Asin(objDisp.x / transform.localScale.z)
-                             * -Mathf.Sign(stickRelativePos.z)
-                             * Mathf.Rad2Deg;
-            var desiredXAngle = Mathf.Atan(objDisp.y / transform.localScale.z)
-                             * Mathf.Sign(stickRelativePos.z)
-                             * Mathf.Rad2Deg;
+            var desiredYAngle = Mathf.Atan(objDisp.x / (objDisp.z + (objInitialPos.z - initialPos.z) * 2))
+                              //* -Mathf.Sign(stickRelativePos.z)
+                              * Mathf.Rad2Deg;
+            var desiredXAngle = -Mathf.Atan(objDisp.y / (objDisp.z + (objInitialPos.z - initialPos.z) * 2))
+                              //* Mathf.Sign(stickRelativePos.z)
+                              * Mathf.Rad2Deg;
             transform.position = initialPos + stickRelativePos;
 
             transform.rotation = Quaternion.Euler(desiredXAngle, desiredYAngle, 0);

@@ -14,7 +14,7 @@ public class TurnController : MonoBehaviour {
     void Start() {
         slingRenderer = sling.GetComponentInChildren<Renderer>();
         slingRenderer.material = player1Material;
-
+        
         Turn = Infectable.Alignment.Player1;
     }
 

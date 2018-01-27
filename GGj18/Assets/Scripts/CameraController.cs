@@ -3,25 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
-    public float rotSpeed = 0.1f;
+    public float panSpeed = 0.1f;
+    public float cowFollowSpeed = 2f;
     public GameObject targetObject;
+    public Vector3 mapViewPosition;
+    public Vector3 mapViewRotation;
 
-    private Vector3 initialForward;
+    private Quaternion initialRotation;
     private Vector3 offset;
-    private Rigidbody targetRb;
+
+    private Vector3 targetPos;
+    private Quaternion targetRot;
+
+    private bool mapView = false;
 
     void Start() {
-        initialForward = transform.forward;
         offset = transform.position - targetObject.transform.position;
-        targetRb = targetObject.GetComponent<Rigidbody>();
+        initialRotation = transform.localRotation;
+    }
+
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.M)) {
+            if (!mapView) {
+                targetPos = mapViewPosition;
+                targetRot = Quaternion.Euler(mapViewRotation);
+            }
+            mapView = !mapView;
+        }
     }
 
     void FixedUpdate() {
-        transform.position = offset + targetObject.transform.position;
-        if (targetRb.velocity.sqrMagnitude > 0) {
-            //transform.forward = Vector3.Lerp(transform.forward, targetRb.velocity.normalized, rotSpeed);
+        if (mapView) {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, panSpeed * Time.fixedDeltaTime);
+            transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRot, panSpeed * Time.fixedDeltaTime);
         } else {
-            transform.forward = Vector3.Lerp(transform.forward, initialForward, rotSpeed);
+            targetPos = offset + targetObject.transform.position;
+            targetRot = initialRotation;
+            transform.position = Vector3.Lerp(transform.position, targetPos, cowFollowSpeed * Time.fixedDeltaTime);
+            transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRot, cowFollowSpeed * Time.fixedDeltaTime);
         }
     }
 }

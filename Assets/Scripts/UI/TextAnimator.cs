@@ -10,6 +10,7 @@ public class TextAnimator : MonoBehaviour {
 
     void Start() {
         rect = GetComponent<RectTransform>();
+        rect.localScale = Vector3.zero;
     }
 
     private float Signal(float x) {

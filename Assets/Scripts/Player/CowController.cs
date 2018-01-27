@@ -45,7 +45,7 @@ public class CowController : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
-            transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
+            NextTurn();
         }
 
         if (attached) {
@@ -85,10 +85,14 @@ public class CowController : MonoBehaviour {
             }
         } else {
             if (resettable && (rb.velocity.magnitude < minVelocity || transform.position.y < killHeight)) {
-                SendMessage("ChangeTurn");
-                transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
+                NextTurn();
             }
         }
+    }
+
+    private void NextTurn() {
+        SendMessage("ChangeTurn");
+        transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
     }
     
     private void ResetCow() {
@@ -132,13 +136,15 @@ public class CowController : MonoBehaviour {
         attached = false;
         rb.useGravity = true;
 
+        var model = GetComponentInChildren<Renderer>().transform;
+
         var list = (turnController.Turn == Infectable.Alignment.Player1) ? player1GhostCows : player2GhostCows;
         foreach (var cow in list) {
             if (cow != null) {
                 cow.SendMessage("Fade");
             }
         }
-        list.Add(Instantiate(ghostCowPrefab, transform.position, Quaternion.identity));
+        list.Add(Instantiate(ghostCowPrefab, transform.position + model.localPosition, Quaternion.identity));
         StartCoroutine(BecomeResettable());
     }
 

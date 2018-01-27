@@ -20,11 +20,16 @@ public class Infectable : MonoBehaviour {
     private GameObject[] pips;
 
     void Start() {
-        var size = pipPrefab.GetComponent<PipController>().finalScale;
-        
+        var size = pipPrefab.GetComponent<PipController>().finalScaleRatio;
+
         pips = new GameObject[maxInfectedAmount];
         for (int i = 0; i < maxInfectedAmount; ++i) {
             pips[i] = Instantiate(pipPrefab, transform);
+            pips[i].GetComponent<PipController>().initialScaleRatio = pips[i].transform.localScale.x;
+            pips[i].transform.localScale = new Vector3(1 / transform.localScale.x,
+                                                       1 / transform.localScale.y,
+                                                       1 / transform.localScale.z)
+                                           * pips[i].transform.localScale.x;
             pips[i].transform.localPosition = pipOffset;
 
             // calculate position so the whole lot is centred

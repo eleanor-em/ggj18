@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 public class CowController : MonoBehaviour {
+    public GameObject ghostCowPrefab;
     public float translateAmount = 0.5f;
     public float pullbackAmount = 1.5f;
     public float pullbackSpeed = 0.1f;
@@ -17,11 +18,22 @@ public class CowController : MonoBehaviour {
     private Rigidbody rb;
     private bool attached = true;
 
+    private List<GameObject> ghostCows = new List<GameObject>();
+
     void Start() {
         initialPos = transform.position;
         targetPos = initialPos;
         rb = GetComponent<Rigidbody>();
     }
+
+    void OnCollisionEnter(Collision other) {
+        var infectable = other.gameObject.GetComponent<Infectable>();
+        if (infectable != null) {
+            Debug.Log("hit!");
+            infectable.Infect();
+        }
+    }
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
             transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
@@ -79,6 +91,7 @@ public class CowController : MonoBehaviour {
 	}
     
     private void ResetCow() {
+        transform.rotation = Quaternion.identity;
         transform.position = initialPos;
         rb.useGravity = false;
         attached = true;
@@ -89,5 +102,12 @@ public class CowController : MonoBehaviour {
     private void DetachCow() {
         attached = false;
         rb.useGravity = true;
+
+        foreach (var cow in ghostCows) {
+            if (cow != null) {
+                cow.SendMessage("Fade");
+            }
+        }
+        ghostCows.Add(Instantiate(ghostCowPrefab, transform.position, Quaternion.identity));
     }
 }

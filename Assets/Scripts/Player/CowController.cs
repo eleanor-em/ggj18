@@ -17,6 +17,7 @@ public class CowController : MonoBehaviour {
     public float killHeight = -5f;
     private float initialDrag;
     public Vector3 InitialPos { get { return initialPos; } }
+    public bool Attached { get { return attached; } }
 
     private Vector3 initialPos;
     private Rigidbody rb;
@@ -45,6 +46,10 @@ public class CowController : MonoBehaviour {
     }
 
     void Update() {
+        if (turnController.GameOver) {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.R)) {
             NextTurn();
         }
@@ -58,6 +63,10 @@ public class CowController : MonoBehaviour {
             transform.position = new Vector3(initialPos.x + Mathf.Abs(pullbackAmount * Mathf.Sin(time * Mathf.PI * 2 / pullbackPeriod)),
                                              transform.position.y,
                                              transform.position.z);
+
+            if (Input.GetButtonDown("Fire1")) {
+                SendMessage("Stretch");
+            }
 
             if (Input.GetButton("Fire1")) {
                 time += Time.deltaTime;

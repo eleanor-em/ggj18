@@ -12,6 +12,8 @@ public class Infectable : MonoBehaviour {
     public int maxInfectedAmount = 4;
     public GameObject pipPrefab;
 
+    public int Score { get { return infectedAmount * (alignment == Alignment.Player1 ? 1 : -1); } }
+
     private int infectedAmount = 0;
     private Alignment alignment;
 

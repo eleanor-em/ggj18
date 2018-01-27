@@ -100,6 +100,8 @@ public class CowController : MonoBehaviour {
     }
     
     private void ResetCow() {
+        time = 0;
+
         transform.rotation = Quaternion.identity;
         transform.position = initialPos;
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Slingshot.unity
+- path: Assets/Scenes/jimbles' playground.unity
   isLoaded: 1
   isActive: 1

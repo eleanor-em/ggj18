@@ -15,6 +15,13 @@ ModelImporter:
     100014: CastleWalls
     100016: CastleWalls_001
     100018: Cylinder_003
+    100020: CastleWalls_002
+    100022: Slingshot
+    100024: WizardTower
+    100026: Blacksmith
+    100028: Cube
+    100030: House
+    100032: Barrel
     400000: Cube_001
     400002: Plane
     400004: //RootNode
@@ -25,9 +32,19 @@ ModelImporter:
     400014: CastleWalls
     400016: CastleWalls_001
     400018: Cylinder_003
+    400020: CastleWalls_002
+    400022: Slingshot
+    400024: WizardTower
+    400026: Blacksmith
+    400028: Cube
+    400030: House
+    400032: Barrel
     2100000: Material_001
     2100002: unnamed
     2100004: Material
+    2100006: Blacksmith
+    2100008: WizardTower
+    2100010: Material_002__Untitled
     2300000: Cube_001
     2300002: Plane
     2300004: Wall
@@ -37,6 +54,13 @@ ModelImporter:
     2300012: CastleWalls
     2300014: CastleWalls_001
     2300016: Cylinder_003
+    2300018: CastleWalls_002
+    2300020: Slingshot
+    2300022: WizardTower
+    2300024: Blacksmith
+    2300026: Cube
+    2300028: House
+    2300030: Barrel
     3300000: Cube_001
     3300002: Plane
     3300004: Wall
@@ -46,6 +70,13 @@ ModelImporter:
     3300012: CastleWalls
     3300014: CastleWalls_001
     3300016: Cylinder_003
+    3300018: CastleWalls_002
+    3300020: Slingshot
+    3300022: WizardTower
+    3300024: Blacksmith
+    3300026: Cube
+    3300028: House
+    3300030: Barrel
     4300000: Plane
     4300002: Cube_001
     4300004: Wall
@@ -55,6 +86,13 @@ ModelImporter:
     4300012: CastleWalls
     4300014: Cylinder_003
     4300016: CastleWalls_001
+    4300018: CastleWalls_002
+    4300020: Slingshot
+    4300022: WizardTower
+    4300024: Blacksmith
+    4300026: Cube
+    4300028: House
+    4300030: Barrel
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

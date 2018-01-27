@@ -9,11 +9,13 @@ public class TurnController : MonoBehaviour {
     public Material player2Material;
     public GameObject sling;
 
-    private Renderer slingRenderer;
+    private Renderer[] slingRenderer;
 
     void Start() {
-        slingRenderer = sling.GetComponentInChildren<Renderer>();
-        slingRenderer.material = player1Material;
+        slingRenderer = sling.GetComponentsInChildren<Renderer>();
+        foreach (var rdr in slingRenderer) {
+            rdr.material = player1Material;
+        }
         
         Turn = Infectable.Alignment.Player1;
     }
@@ -21,10 +23,14 @@ public class TurnController : MonoBehaviour {
     private void ChangeTurn() {
         if (Turn == Infectable.Alignment.Player1) {
             Turn = Infectable.Alignment.Player2;
-            slingRenderer.material = player2Material;
+            foreach (var rdr in slingRenderer) {
+                rdr.material = player2Material;
+            }
         } else {
             Turn = Infectable.Alignment.Player1;
-            slingRenderer.material = player1Material;
+            foreach (var rdr in slingRenderer) {
+                rdr.material = player1Material;
+            }
         }
     }
 }

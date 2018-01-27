@@ -55,7 +55,7 @@ public class Infectable : MonoBehaviour {
                 infectedAmount = maxInfectedAmount;
             }
         } else {
-            for (int i = infectedAmount - 1; i >= 0 && i > infectedAmount - amount; --i) {
+            for (int i = infectedAmount - 1; i >= 0 && i >= infectedAmount - amount; --i) {
                 pips[i].SendMessage("Toggle");
             }
             infectedAmount -= amount;

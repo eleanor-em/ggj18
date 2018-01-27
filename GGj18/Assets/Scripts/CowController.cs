@@ -21,11 +21,15 @@ public class CowController : MonoBehaviour {
     private Vector3 initialPos;
     private Rigidbody rb;
     private bool attached = true;
+    private bool resettable = false;
+    private TurnController turnController;
     
-    private List<GameObject> ghostCows = new List<GameObject>();
+    private List<GameObject> player1GhostCows = new List<GameObject>();
+    private List<GameObject> player2GhostCows = new List<GameObject>();
 
     void Start() {
         initialPos = transform.position;
+        turnController = GetComponent<TurnController>();
         rb = GetComponent<Rigidbody>();
         initialDrag = rb.drag;
     }
@@ -43,7 +47,6 @@ public class CowController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.R)) {
             transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
         }
-
 
         if (attached) {
             float dz = Input.GetAxis("Horizontal"),
@@ -81,7 +84,7 @@ public class CowController : MonoBehaviour {
                 transform.position = new Vector3(transform.position.x, initialPos.y - maxYStretch, transform.position.z);
             }
         } else {
-            if (rb.velocity.magnitude < minVelocity || transform.position.y < killHeight) {
+            if (resettable && (rb.velocity.magnitude < minVelocity || transform.position.y < killHeight)) {
                 SendMessage("ChangeTurn");
                 transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
             }
@@ -98,18 +101,49 @@ public class CowController : MonoBehaviour {
         rb.drag = initialDrag;
 
         attached = true;
+        resettable = false;
 
+        if (turnController.Turn == Infectable.Alignment.Player1) {
+            foreach (var cow in player1GhostCows) {
+                if (cow != null) {
+                    cow.SetActive(true);
+                }
+            }
+            foreach (var cow in player2GhostCows) {
+                if (cow != null) {
+                    cow.SetActive(false);
+                }
+            }
+        } else {
+            foreach (var cow in player2GhostCows) {
+                if (cow != null) {
+                    cow.SetActive(true);
+                }
+            }
+            foreach (var cow in player1GhostCows) {
+                if (cow != null) {
+                    cow.SetActive(false);
+                }
+            }
+        }
     }
 
     private void DetachCow() {
         attached = false;
         rb.useGravity = true;
 
-        foreach (var cow in ghostCows) {
+        var list = (turnController.Turn == Infectable.Alignment.Player1) ? player1GhostCows : player2GhostCows;
+        foreach (var cow in list) {
             if (cow != null) {
                 cow.SendMessage("Fade");
             }
         }
-        ghostCows.Add(Instantiate(ghostCowPrefab, transform.position, Quaternion.identity));
+        list.Add(Instantiate(ghostCowPrefab, transform.position, Quaternion.identity));
+        StartCoroutine(BecomeResettable());
+    }
+
+    private IEnumerator BecomeResettable() {
+        yield return new WaitForSeconds(0.5f);
+        resettable = true;
     }
 }

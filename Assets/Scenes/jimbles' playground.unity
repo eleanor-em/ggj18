@@ -451,6 +451,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 198528418684019540, guid: c93a440248a9ab7429372894defc1ddf,
+        type: 2}
+      propertyPath: randomSeed
+      value: 1550195355
+      objectReference: {fileID: 0}
+    - target: {fileID: 198528418684019540, guid: c93a440248a9ab7429372894defc1ddf,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 198528418684019540, guid: c93a440248a9ab7429372894defc1ddf,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 0.87058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 198528418684019540, guid: c93a440248a9ab7429372894defc1ddf,
+        type: 2}
+      propertyPath: ColorModule.gradient.maxGradient.key2.a
+      value: 0.8392157
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c93a440248a9ab7429372894defc1ddf, type: 2}
   m_IsPrefabParent: 0

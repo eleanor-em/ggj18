@@ -97,5 +97,6 @@ MonoBehaviour:
   finalScale: 0.5
   shiftSpeed: 10
   inactiveAlpha: 0.3
+  player2Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   player1Material: {fileID: 2100000, guid: 6e17f3771efe9c64fa9480fb26249091, type: 2}
   player2Material: {fileID: 2100000, guid: cb53ad8572c73ef43965b9bfc6b5c07b, type: 2}

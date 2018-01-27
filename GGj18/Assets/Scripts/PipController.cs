@@ -10,6 +10,9 @@ public class PipController : MonoBehaviour {
     private float targetAlpha = 0.5f;
     private float alpha = 0.5f;
 
+    private Mesh player1Mesh;
+    public Mesh player2Mesh;
+
     public Material player1Material;
     public Material player2Material;
     private Material initialMaterial;
@@ -17,6 +20,7 @@ public class PipController : MonoBehaviour {
     private bool active = false;
 
     new private Renderer renderer;
+    private MeshFilter meshFilter;
 
     void Start() {
         initialScale = transform.localScale.x;
@@ -24,6 +28,8 @@ public class PipController : MonoBehaviour {
 
         renderer = GetComponent<Renderer>();
         initialMaterial = renderer.material;
+        meshFilter = GetComponent<MeshFilter>();
+        player1Mesh = meshFilter.mesh;
     }
 
     public void SetAlignment(Infectable.Alignment alignment) {
@@ -33,9 +39,11 @@ public class PipController : MonoBehaviour {
                 break;
             case Infectable.Alignment.Player1:
                 renderer.material = player1Material;
+                meshFilter.mesh = player1Mesh;
                 break;
             case Infectable.Alignment.Player2:
                 renderer.material = player2Material;
+                meshFilter.mesh = player2Mesh;
                 break;
         }
     }

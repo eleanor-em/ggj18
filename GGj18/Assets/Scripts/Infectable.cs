@@ -31,12 +31,12 @@ public class Infectable : MonoBehaviour {
             // two cases -- odd vs even
             if (maxInfectedAmount % 2 == 0) {
                 // even case
-                pips[i].transform.position += Vector3.left * (pipSeparation / 2 + pipSeparation * (maxInfectedAmount - 1)
-                                                            + size / 2 + size * (maxInfectedAmount - 1)
+                pips[i].transform.position += Vector3.back * (pipSeparation / 2 + pipSeparation * (maxInfectedAmount / 2 - 1)
+                                                            + size / 2 + size * (maxInfectedAmount / 2 - 1)
                                                             + i * (size + pipSeparation));
             } else {
-                // fuck
-                throw new System.Exception("not implemented yet");
+                pips[i].transform.position += Vector3.back * ((size + pipSeparation) * (maxInfectedAmount / 2 + 1)
+                                                             + i * (size + pipSeparation));
             }
         }
     }

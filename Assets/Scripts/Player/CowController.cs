@@ -23,6 +23,7 @@ public class CowController : MonoBehaviour {
     private bool attached = true;
     private bool resettable = false;
     private TurnController turnController;
+    private float time = 0;
     
     private List<GameObject> player1GhostCows = new List<GameObject>();
     private List<GameObject> player2GhostCows = new List<GameObject>();
@@ -45,7 +46,7 @@ public class CowController : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
-            transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
+            NextTurn();
         }
 
         if (attached) {
@@ -54,12 +55,15 @@ public class CowController : MonoBehaviour {
             // object is stuck in plane for simplicity
             transform.position += translateAmount * Time.deltaTime * (Vector3.forward * dz + Vector3.up * dy);
 
-            transform.position = new Vector3(initialPos.x + Mathf.Abs(pullbackAmount * Mathf.Sin(Time.time * Mathf.PI * 2 / pullbackPeriod)),
+            transform.position = new Vector3(initialPos.x + Mathf.Abs(pullbackAmount * Mathf.Sin(time * Mathf.PI * 2 / pullbackPeriod)),
                                              transform.position.y,
                                              transform.position.z);
 
+            if (Input.GetButton("Fire1")) {
+                time += Time.deltaTime;
+            }
             // check if we've just released the slingshot
-            if (Input.GetButtonDown("Fire1")) {
+            if (Input.GetButtonUp("Fire1")) {
                 // make sure we pulled it back enough
                 if (Vector3.Distance(initialPos, transform.position) > pullbackAmount * minPullbackRatio) {
                     // SPRING
@@ -85,13 +89,19 @@ public class CowController : MonoBehaviour {
             }
         } else {
             if (resettable && (rb.velocity.magnitude < minVelocity || transform.position.y < killHeight)) {
-                SendMessage("ChangeTurn");
-                transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
+                NextTurn();
             }
         }
     }
+
+    private void NextTurn() {
+        SendMessage("ChangeTurn");
+        transform.parent.BroadcastMessage("ResetCow", SendMessageOptions.DontRequireReceiver);
+    }
     
     private void ResetCow() {
+        time = 0;
+
         transform.rotation = Quaternion.identity;
         transform.position = initialPos;
 
@@ -132,13 +142,15 @@ public class CowController : MonoBehaviour {
         attached = false;
         rb.useGravity = true;
 
+        var model = GetComponentInChildren<Renderer>().transform;
+
         var list = (turnController.Turn == Infectable.Alignment.Player1) ? player1GhostCows : player2GhostCows;
         foreach (var cow in list) {
             if (cow != null) {
                 cow.SendMessage("Fade");
             }
         }
-        list.Add(Instantiate(ghostCowPrefab, transform.position, Quaternion.identity));
+        list.Add(Instantiate(ghostCowPrefab, transform.position + model.localPosition, Quaternion.identity));
         StartCoroutine(BecomeResettable());
     }
 

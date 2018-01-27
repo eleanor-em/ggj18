@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
 public class PipController : MonoBehaviour {
-    public float finalScale = 0.5f;
-    private float initialScale;
-    private float targetScale;
+    public float initialScaleRatio;
+    public float finalScaleRatio = 0.5f;
+    private Vector3 initialScale;
+    private Vector3 targetScale;
 
     public float shiftSpeed = 0.1f;
     public float inactiveAlpha = 0.5f;
@@ -23,7 +24,7 @@ public class PipController : MonoBehaviour {
     private MeshFilter meshFilter;
 
     void Start() {
-        initialScale = transform.localScale.x;
+        initialScale = transform.localScale;
         targetScale = initialScale;
 
         renderer = GetComponent<Renderer>();
@@ -53,7 +54,7 @@ public class PipController : MonoBehaviour {
         var col = renderer.material.color;
         renderer.material.color = new Color(col.r, col.g, col.b, alpha);
 
-        transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * targetScale, shiftSpeed * Time.deltaTime);
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, shiftSpeed * Time.deltaTime);
     }
 
     private void Toggle() {
@@ -62,7 +63,7 @@ public class PipController : MonoBehaviour {
             active = false;
             targetAlpha = inactiveAlpha;
         } else {
-            targetScale = finalScale;
+            targetScale = finalScaleRatio / initialScaleRatio * initialScale;
             active = true;
             targetAlpha = 1;
         }

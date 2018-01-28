@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Splash.unity
     guid: 5431fb05857167c4cb6aec6ce45cfd23
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Slingshot.unity
     guid: 7bf11d4dcbc50e14fb8f9c01005b2171

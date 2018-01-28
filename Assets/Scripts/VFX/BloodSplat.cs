@@ -11,6 +11,7 @@ public class BloodSplat : MonoBehaviour {
     public float minMooDelay = 1;
     public float maxMooDelay = 4;
     public AudioClip[] distressedMoos;
+    public GameObject gibletPrefab;
 
     private AudioSource source;
     private int impacts = 0;
@@ -37,6 +38,10 @@ public class BloodSplat : MonoBehaviour {
     }
 
     void OnCollisionEnter(Collision other) {
+        if (impacts == 0) {
+            Instantiate(gibletPrefab).transform.position = transform.position;
+        }
+
         if (canSplat && impacts++ < maxImpacts) {
             source.clip = splat;
             source.Play();

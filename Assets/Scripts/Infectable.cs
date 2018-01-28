@@ -21,6 +21,13 @@ public class Infectable : MonoBehaviour {
     public float pipSeparation = 0.2f;
     private GameObject[] pips;
 
+    public GameObject pestilencePrefab;
+    public GameObject lovelinessPrefab;
+    public Vector3 particleOffset;
+
+    private GameObject pestilence;
+    private GameObject loveliness;
+
     void Start() {
         var size = pipPrefab.GetComponent<PipController>().finalScaleRatio;
 
@@ -46,6 +53,14 @@ public class Infectable : MonoBehaviour {
                                                              + i * (size + pipSeparation));
             }
         }
+
+        pestilence = Instantiate(pestilencePrefab);
+        loveliness = Instantiate(lovelinessPrefab);
+
+        pestilence.transform.position = transform.position + particleOffset;
+        loveliness.transform.position = transform.position + particleOffset;
+        pestilence.SetActive(false);
+        loveliness.SetActive(false);
     }
 
     public void Infect(Alignment alignment = Alignment.Player1, int amount = 1) {
@@ -79,6 +94,21 @@ public class Infectable : MonoBehaviour {
         // update pips
         foreach (GameObject pip in pips) {
             pip.GetComponent<PipController>().SetAlignment(this.alignment);
+        }
+
+        switch (alignment) {
+            case Alignment.None:
+                pestilence.SetActive(false);
+                loveliness.SetActive(false);
+                break;
+            case Alignment.Player1:
+                pestilence.SetActive(true);
+                loveliness.SetActive(false);
+                break;
+            case Alignment.Player2:
+                pestilence.SetActive(false);
+                loveliness.SetActive(true);
+                break;
         }
     }
 }

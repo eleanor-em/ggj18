@@ -598,8 +598,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &62299356
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1229,8 +1234,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &180257355
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2102,8 +2112,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &325184350
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2656,6 +2671,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 3}
 --- !u!64 &451715755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2817,6 +2837,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0.5, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &461675146
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,8 +3108,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &466920093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3280,8 +3310,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &512689821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3384,8 +3419,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &519674225
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3936,6 +3976,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: -4, y: 0, z: -2.5}
 --- !u!64 &559841039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4977,6 +5022,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0, y: 1, z: 1.6}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &740121805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,8 +5129,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &753423296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,8 +5774,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &851892952
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6001,6 +6061,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0, y: 1, z: 1.6}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &882948592
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6855,8 +6920,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &965660828
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7230,6 +7300,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0.5, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1004891502
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8652,8 +8727,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1272005226
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8756,8 +8836,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1297805182
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9214,6 +9299,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 3}
 --- !u!64 &1340462174
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9670,6 +9760,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0, y: 1, z: 1.6}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1364328489
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10542,7 +10637,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 36607b2abf102094b9b9299ab451ea4c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1408690476}
-  m_LocalRotation: {x: -0.6910603, y: -0.1497857, z: -0.1497857, w: 0.69106025}
+  m_LocalRotation: {x: -0.69106025, y: -0.14978568, z: -0.14978568, w: 0.6910602}
   m_LocalPosition: {x: -48.93132, y: 2.5199916, z: -35.929657}
   m_LocalScale: {x: 1.0000002, y: 1, z: 0.9999998}
   m_Children: []
@@ -11044,8 +11139,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1440415725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11128,7 +11228,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400024, guid: 8a8440980abb28e47851b94bebf0e20c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1443372223}
-  m_LocalRotation: {x: -0.6174496, y: -0.3446099, z: -0.34460995, w: 0.6174496}
+  m_LocalRotation: {x: -0.61744964, y: -0.34460992, z: -0.34460998, w: 0.61744964}
   m_LocalPosition: {x: 7.003941, y: -2.7300007, z: 41.99101}
   m_LocalScale: {x: 1.7500298, y: 1.7500299, z: 5.71091}
   m_Children: []
@@ -11150,6 +11250,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0.5, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1443372226
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11781,8 +11886,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1509534307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11973,8 +12083,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1539406551
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12605,8 +12720,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1599406862
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12852,6 +12972,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4bfc4f16e1c7c38448401ebf6a78dac5, type: 3}
   - {fileID: 8300000, guid: 9cbc0dc38e975d241b147d3fca057709, type: 3}
   - {fileID: 8300000, guid: 5d1e955618d42eb4d866f47b18751544, type: 3}
+  gibletPrefab: {fileID: 1725219867795946, guid: 7436babc7cc694d43b151aea0bfd2912,
+    type: 2}
 --- !u!114 &1609431051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13926,8 +14048,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1691520046
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14294,8 +14421,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1707066510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14545,6 +14677,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 1}
 --- !u!1 &1740847611
 GameObject:
   m_ObjectHideFlags: 0
@@ -14593,6 +14730,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -3, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 1, y: 0, z: 0}
 --- !u!64 &1740847614
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14755,6 +14897,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -3, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: -2, y: 0, z: -2}
 --- !u!4 &1778050838 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 43cd8e1888ffd594182c7370bfbc8e0f, type: 3}
@@ -14871,7 +15018,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400012, guid: 36607b2abf102094b9b9299ab451ea4c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1790692685}
-  m_LocalRotation: {x: -0.6910603, y: -0.1497857, z: -0.1497857, w: 0.69106025}
+  m_LocalRotation: {x: -0.69106025, y: -0.14978568, z: -0.14978568, w: 0.6910602}
   m_LocalPosition: {x: -52.245007, y: 2.428066, z: -37.436928}
   m_LocalScale: {x: 1.0000002, y: 1, z: 0.9999998}
   m_Children: []
@@ -14935,6 +15082,130 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1790692685}
   m_Mesh: {fileID: 4300008, guid: 36607b2abf102094b9b9299ab451ea4c, type: 3}
+--- !u!1 &1791072328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1791072330}
+  - component: {fileID: 1791072329}
+  - component: {fileID: 1791072331}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1791072329
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791072328}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 777969e036668584ebbc63bf2bd7016e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1791072330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791072328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791072331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791072328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d3edf4843a16941a0c15a40f8249ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+  minDelay: 20
+  maxDelay: 30
 --- !u!1 &1808688709
 GameObject:
   m_ObjectHideFlags: 0
@@ -15223,7 +15494,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400010, guid: 36607b2abf102094b9b9299ab451ea4c, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1818088246}
-  m_LocalRotation: {x: -0.6910603, y: -0.1497857, z: -0.1497857, w: 0.69106025}
+  m_LocalRotation: {x: -0.69106025, y: -0.14978568, z: -0.14978568, w: 0.6910602}
   m_LocalPosition: {x: -49.554653, y: 1.198062, z: -39.728798}
   m_LocalScale: {x: 1.0000002, y: 1, z: 0.9999998}
   m_Children: []
@@ -15332,8 +15603,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1820260567
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15526,6 +15802,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: 0, y: 1, z: 1.6}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1839470750
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15631,6 +15912,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -3, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 0}
 --- !u!64 &1842410152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15735,6 +16021,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: -4, y: 0, z: -2.5}
 --- !u!64 &1855680609
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16010,8 +16301,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1885658141
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16204,6 +16500,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 1}
 --- !u!64 &1891836882
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16528,6 +16829,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 1}
 --- !u!64 &1918585366
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16720,6 +17026,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -4, z: 3.5}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 2, y: 0, z: 1}
 --- !u!64 &1924949604
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16940,8 +17251,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInfectedAmount: 2
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
-  pipOffset: {x: 0, y: 1.2, z: 2}
+  pipOffset: {x: 0, y: 0, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 0, y: 0, z: 0}
 --- !u!64 &1976828186
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17047,6 +17363,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -3, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 1, y: 0, z: 0}
 --- !u!64 &1988696273
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17569,6 +17890,11 @@ MonoBehaviour:
   pipPrefab: {fileID: 1898604512920968, guid: f15f769fe3476884a801674526a11b06, type: 2}
   pipOffset: {x: -2, y: -3, z: 2}
   pipSeparation: 0.2
+  pestilencePrefab: {fileID: 1493967244059794, guid: 4ac3e3a301b758a44b068fcc5175b013,
+    type: 2}
+  lovelinessPrefab: {fileID: 1081568952913648, guid: 5106c032c02861d479848517a5e6418d,
+    type: 2}
+  particleOffset: {x: 1, y: 0, z: 0}
 --- !u!64 &2044950025
 MeshCollider:
   m_ObjectHideFlags: 0

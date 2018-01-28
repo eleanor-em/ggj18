@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour {
 	void Start () {
@@ -9,6 +10,6 @@ public class EndGame : MonoBehaviour {
 
     private IEnumerator ExitGame() {
         yield return new WaitForSeconds(10);
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }

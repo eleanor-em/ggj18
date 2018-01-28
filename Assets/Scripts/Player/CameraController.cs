@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.M)) {
+        if (Input.GetButtonDown("MapView")) {
             if (!mapView) {
                 targetPos = mapViewPosition;
                 targetRot = Quaternion.Euler(mapViewRotation);
